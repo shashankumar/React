@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet, { Namaste } from './component/Greet'
+import Welcome from './component/Welcome';
+import EvnetBind from './component/EvnetBind';
+import Parent from './component/Parent';
+import Form from './component/Form';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Namaste/>
+        <Greet/>
+        <Welcome/>
+        <EvnetBind/>
+        <Parent></Parent>
+        <Form/>
+      
+
       </header>
     </div>
   );
